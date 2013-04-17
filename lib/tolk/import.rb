@@ -28,6 +28,7 @@ module Tolk
         count = 0
 
         data.each do |key, value|
+          puts "=> phrase: #{key}"
           phrase = phrases.detect {|p| p.key == key}
 
           if phrase
